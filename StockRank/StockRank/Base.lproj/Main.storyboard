@@ -48,19 +48,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테슬라" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03u-Yn-YWy">
-                                                    <rect key="frame" x="106" y="50.5" width="42" height="19.5"/>
+                                                    <rect key="frame" x="106" y="50.5" width="42" height="20"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,000,929 원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIU-2e-mqM">
-                                                    <rect key="frame" x="106" y="76.5" width="70" height="15"/>
+                                                    <rect key="frame" x="106" y="77" width="70" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1.3%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf1-5Z-LAi">
-                                                    <rect key="frame" x="181" y="76.5" width="35" height="15"/>
+                                                    <rect key="frame" x="181" y="77" width="35" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
@@ -91,6 +91,13 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="141"/>
+                                        <connections>
+                                            <outlet property="companyIconImageView" destination="Es4-yE-GKW" id="d1E-mg-rM8"/>
+                                            <outlet property="companyNameLabel" destination="03u-Yn-YWy" id="Lsf-Vi-L4D"/>
+                                            <outlet property="companyPriceLabel" destination="SIU-2e-mqM" id="CQO-Kx-Sss"/>
+                                            <outlet property="priceDiffLabel" destination="Kf1-5Z-LAi" id="RIg-bY-L3B"/>
+                                            <outlet property="rankLabel" destination="VdB-As-h6F" id="Mvg-yb-g03"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
