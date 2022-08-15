@@ -26,11 +26,14 @@ extension StockRankViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StockRankCollectionViewCell", for: indexPath) as? StockRankCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        let stock = stockList[indexPath.item]
+        cell.configure(stock)
+        return cell
     }
-    
-    
-    
 }
 
 extension StockRankViewController: UICollectionViewDelegateFlowLayout {
