@@ -67,7 +67,8 @@ extension StockRankViewController: UICollectionViewDelegateFlowLayout {
 - 스토리보드에서 cell 클릭후 identity inspector에서 클래스 설정하기
 - cell의 identifier 설정하기
 
-## 🍎 collectionView에서 셀 안에서 두 요소의 관계를 맺어줄때 leading과 Horizontal spacing의 차이점.
+## 🍎 collectionView에서 셀 안에서 두 오브젝트 사이에 관계를 맺어줄 때.
 
-- leading
-- horizontal spacing
+- 가로로 배치되어 있는 두 오브젝트 사이에 관계를 맺어줄때는 horizontal spacing으로 제약을 걸어줄수 있다.
+- 하나의 오브젝트에 제약을 걸어줄때는 horizontal/vertical spacing이 없다. 
+- 즉, 두 오브젝트 사이를 horizontal spacing으로 제약을 걸어준다면, 각각의 제약을 확인했을때 해당 오브젝트 기준으로 제약을 만든다.
