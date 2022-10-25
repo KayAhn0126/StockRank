@@ -28,7 +28,7 @@ class StockRankViewController: UIViewController {
 - collectionView.dataSource = self → StockRankViewController가 collectionView가 사용할 data에 대해서 알려줄것이다. (Data, Presentation)
 - collectionView.delegate = self → StockRankViewController가 collectionView가 어떻게 배치할건지 알려줄것이다. (Layout)
 
-## 🍎 UICollectionViewdataSource 프로토콜 채택 후 준수하기
+## 🍎 UICollectionViewDataSource 프로토콜 채택 후 준수하기
 
 ```swift
 // dataSouce 프로토콜을 준수하려면 두가지 메서드를 구현해야한다.
@@ -72,3 +72,9 @@ extension StockRankViewController: UICollectionViewDelegateFlowLayout {
 - 가로로 배치되어 있는 두 오브젝트 사이에 관계를 맺어줄때는 horizontal spacing으로 제약을 걸어줄수 있다.
 - 하나의 오브젝트에 제약을 걸어줄때는 horizontal/vertical spacing이 없다. 
 - 즉, 두 오브젝트 사이를 horizontal spacing으로 제약을 걸어준다면, 각각의 제약을 확인했을때 해당 오브젝트 기준으로 제약을 만든다.
+
+## 🍎 indexPath에는 어떤 정보가 들어있나?
+
+- cell의 section과 (row or item) 정보가 들어있다.
+- tableViewCell 사용시 indexPath.row
+- collectionViewCell 사용시 indexPath.item
